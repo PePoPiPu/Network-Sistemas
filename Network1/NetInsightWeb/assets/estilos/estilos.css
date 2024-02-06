@@ -1,0 +1,71 @@
+@font-face {
+    font-family: Moderne Sans;
+    src: url(../fuentes/Moderne_Sans_Font.ttf) ;
+}
+@font-face {
+    font-family: Bioweapon;
+    src: url(../fuentes/BIOWEAPON.ttf);
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 100px 75px 1fr 75px;
+    grid-template-areas: "zh" "zn" "zs" "zf";
+}
+
+header {
+    grid-area: zh;
+    font-family: Bioweapon;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #253237;
+    color: #e6e6e6;
+    font-size: 40px;
+}
+#logo {
+    height: 75px;
+    filter: invert(1);
+}
+nav {
+    grid-area: zn;
+    font-family: Moderne Sans;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 25px;
+    background-color: #5C6B73;
+    color: #e6e6e6;;
+}
+nav > div {
+    cursor: pointer;
+}
+section {
+    grid-area: zs;
+    font-family: Moderne Sans;
+    background-color: #9DB4C0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+td {
+    border: 1px solid #151515;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer {
+    grid-area: zf;
+    font-family: Moderne Sans;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #253237;
+    color: #e6e6e6;
+    font-size: 20px;
+}

@@ -1,0 +1,1 @@
+# Nmap 7.94SVN scan initiated Tue Feb  6 16:38:45 2024 as: nmap -p- -oN 192.168.0.12.txt 192.168.0.12
