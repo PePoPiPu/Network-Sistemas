@@ -1,1 +1,7 @@
 # Nmap 7.94SVN scan initiated Tue Feb  6 16:39:25 2024 as: nmap -p- -oN 192.168.0.19.txt 192.168.0.19
+Nmap scan report for 192.168.0.19
+Host is up (0.36s latency).
+All 65535 scanned ports on 192.168.0.19 are in ignored states.
+Not shown: 65535 closed tcp ports (conn-refused)
+
+# Nmap done at Tue Feb  6 19:28:04 2024 -- 1 IP address (1 host up) scanned in 10118.88 seconds
