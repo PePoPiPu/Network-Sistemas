@@ -1,71 +1,183 @@
 @font-face {
-    font-family: Moderne Sans;
-    src: url(../fuentes/Moderne_Sans_Font.ttf) ;
+    font-family: Array;
+    src: url(../fuentes/Array-Bold.otf);
+}
+
+@font-face {
+    font-family: Satoshi;
+    src: url(../fuentes/Satoshi-Regular.otf);
 }
 @font-face {
-    font-family: Bioweapon;
-    src: url(../fuentes/BIOWEAPON.ttf);
+    font-family: Satoshi-Bold;
+    src: url(../fuentes/Satoshi-Bold.otf);
 }
+
 * {
     padding: 0;
     margin: 0;
 }
+
 body {
     height: 100vh;
     display: grid;
-    grid-template-rows: 100px 75px 1fr 75px;
-    grid-template-areas: "zh" "zn" "zs" "zf";
+    grid-template-rows: 75px 1fr 75px;
+    grid-template-areas: "zn" "zs" "zf";
+    background-color: #111113;
+    font-family: Satoshi;
 }
 
-header {
-    grid-area: zh;
-    font-family: Bioweapon;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #253237;
-    color: #e6e6e6;
-    font-size: 40px;
-}
-#logo {
-    height: 75px;
-    filter: invert(1);
-}
 nav {
     grid-area: zn;
-    font-family: Moderne Sans;
+    color: #d6d6d6;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: right;
     align-items: center;
-    font-size: 25px;
-    background-color: #5C6B73;
-    color: #e6e6e6;;
-}
-nav > div {
+    font-size: 22px;
     cursor: pointer;
 }
-section {
-    grid-area: zs;
-    font-family: Moderne Sans;
-    background-color: #9DB4C0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+nav > div {
+    margin: 10px;
+    transition: 0.4s;
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0 10px;
+    margin: 0 10px;
 }
 
-td {
-    border: 1px solid #151515;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+nav>div:hover {
+    background-color: #d6d6d6;
+    color: #111113;
+    padding: 24px 10px;
+}
+
+#logo {
+    font-family: Array;
+    font-size: 40px;
+    position: absolute;
+    left: 30px;
+    /* Desactiva el hover */
+    pointer-events:none 
+}
+
+#system {
+    margin-right: 50px;
+}
+
+section {
+    grid-area: zs;
+    color: #d6d6d6;
+}
+#texto_principal {
+    font-family: Satoshi-Bold;
+    font-size: 60px;
+    width: 790px;
+    position: absolute;
+    top: 300px;
+    left: 150px;
+}
+#texto {
+    font-size: 30px;
+    width: 790px;
+    position: absolute;
+    top: 470px;
+    left: 150px;
+}
+#imagen {
+    height: 550px;
+    width: 670px;
+    position: absolute;
+    top: 220px;
+    right: 120px;
+    clip-path: inset(0px round 5%);
+    
+}
+#imagen > img {
+    height: 100%;
 }
 footer {
     grid-area: zf;
-    font-family: Moderne Sans;
+    color: #d6d6d6;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #253237;
-    color: #e6e6e6;
-    font-size: 20px;
+    font-size: 17px;
 }
+
+/* https://alvarotrigo.com/blog/7-scroll-text-animations-css-and-js/ */
+h1 {
+    font-weight: normal;
+    position: relative;
+    top: 25px;
+    padding: 30px;
+    font-size: 50px;
+  }
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    background: linear-gradient(135deg, rgba(43,171,217,1) 0%, rgba(0,130,200,1) 100%);
+    background-clip: text;
+    color: transparent;
+  }
+#card {
+    height: 100px;
+    width: 700px;
+    background-color: #5578eb;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: absolute;
+    top: 700px;
+    left: 150px;
+    border-radius: 20px;
+  }
+  .note::after {
+    content: '';
+    width: 20%;
+    height: 2px;
+    border-radius: 999px;
+    background-color: #AFAFAF;
+    background: linear-gradient(135deg, rgba(43,171,217,1) 0%, rgba(0,130,200,1) 100%);
+    position: absolute;
+    top: -1.8em;
+    left: 0;
+  }
+  .note {
+    font-size: 0.8em;
+    color: #8A8A8A;
+    position: relative;
+    margin-top: 4em;
+  }
+  
+  /* Scroller styling */
+  .scroller {
+    height: 1.2em;
+    line-height: 1.2em;
+    position: relative;
+    bottom: 62px;
+    left: 535px;
+    overflow: hidden;
+    width: 10em;
+  }
+  .scroller > span {
+    position: absolute;
+    top: 0;
+    animation: slide 5s infinite;
+    font-weight: bold;
+    
+  }
+  @keyframes slide {
+    0% {
+      top: 0;
+    }
+    25% {
+      top: -1.2em;
+    }
+    50% {
+      top: -2.4em;
+    }
+    75% {
+      top: -3.6em;
+    }
+  }
