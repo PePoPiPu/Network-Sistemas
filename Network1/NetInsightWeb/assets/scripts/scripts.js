@@ -76,3 +76,10 @@ function fBinarias() {
             console.error('There was a problem with the fetch operation:', error);
         });
 }
+
+function fVerCaptura() {
+    window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: "smooth"
+    });
+}

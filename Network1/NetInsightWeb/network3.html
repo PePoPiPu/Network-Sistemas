@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Network 1</title>
+    <title>Actividad Sistemas Informáticos</title>
     <link href="assets/estilos/estilos.css" rel="stylesheet">
     <script src="assets/scripts/scripts.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
@@ -40,31 +40,26 @@
     </nav>
     <section>
         <div id="texto_principal">
-            Network 1: Análisis de hosts activos
+            Network 3: Captura de tráfico de red.
         </div>
         <div id="texto">
-            Este módulo de la actividad tiene como objetivo realizar un script que escanee la red e imprima en pantalla todos los hosts activos que encuentre.<br>Haz click en el botón para ver el resultado del análisis de mi red local, 192.168.0.0 - 192.168.0.254.
+            Network 3 tiene como objetivo capturar el tráfico de una red y guardarlo en un archivo pcap. Luego se usa la herramienta Grassmarlin de la NSA para sacar la topología de la red. En este caso se ha analizado el tráfico de mi red local, 192.168.0.20, durante un tiempo aproximado de 5 minutos.
         </div>
         <div id="imagen">
-            <img src="assets/imagenes/foto2.jpeg" alt="">
+            <img src="assets/imagenes/foto4.png" alt="">
         </div>
-        <div id="card2" onclick="fActivas()">
-            <h1>Mostrar todas las IPs vivas.
+        <div id="spacer3"></div>
+        <div id="topologia">
+            <img src="assets/imagenes/MapaLogicoResultadosPCAP.png" alt="" id="topologia_img">
+        </div>
+        <div id="card3" onclick="fVerCaptura()">
+            <h1>Ver topología.
                 <div class="scroller">
                   <span>
                   </span>
                 </div>
               </h1>  
         </div>
-        <div id="spacer"></div>
-        <div id="texto_principal2">
-            Tabla de IPs Activas
-        </div>
-        <div id="texto2">
-            En la tabla se muestran las IPs activas de mi red local 192.168.0.1, siendo aquellas las que dan respuesta a un paquete ICMP. La lista se saca de un archivo JSON donde se han volcado los datos desde un script en python. Para más información consulta la Documentación.
-        </div>
-        <div id="activas"></div>
-        <div id="spacer2"></div>
     </section>
     <footer>&copy;Alex Sugimoto - Febrero 2024</footer>
 </body>

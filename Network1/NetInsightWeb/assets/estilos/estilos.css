@@ -198,20 +198,43 @@ td {
 #spacer2 {
   height: 150px;
 }
+#spacer3 {
+  height: 1600px;
+}
+#topologia {
+  height: 500px;
+  position: absolute;
+  top: 1050px;
+  left: 500px;
+}
+#topologia_img {
+  height: 100%;
+}
 #imagen {
   height: 550px;
   width: 670px;
   position: absolute;
   top: 220px;
   right: 120px;
-  clip-path: inset(0px round 5%);
-  
+  clip-path: inset(0px round 5%); 
 }
 
-#imagen>img {
+#imagen > img {
   height: 100%;
 }
-
+#imagen2 {
+  height: 550px;
+  width: 670px;
+  position: absolute;
+  top: 220px;
+  right: 120px;
+  clip-path: inset(0px round 5%); 
+}
+#imagen2 > img {
+  height: 100%;
+  position: relative;
+  right: 300px;
+}
 footer {
   grid-area: zf;
   color: #d6d6d6;
@@ -271,6 +294,19 @@ a:hover {
   cursor: pointer;
 }
 
+#card3 {
+  height: 100px;
+  width: 400px;
+  background-color: #5578eb;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  position: absolute;
+  top: 750px;
+  left: 150px;
+  border-radius: 20px;
+  cursor: pointer;
+}
 .note::after {
   content: '';
   width: 20%;
