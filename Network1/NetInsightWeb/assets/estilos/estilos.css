@@ -108,7 +108,13 @@ table {
   width: 1000px;
   font-weight: bold;
 }
-
+#tabla1 {
+  position: absolute;
+  right: 250px;
+  top: 1050px;
+  width: 30%;
+  font-weight: bold;
+}
 #binarias {
   position: absolute;
   left: 70%;

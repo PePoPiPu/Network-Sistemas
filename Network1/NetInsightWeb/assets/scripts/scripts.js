@@ -30,7 +30,7 @@ function fActivas() {
         top: document.body.scrollHeight,
         behavior: "smooth"
     });
-    let html = "<table>";
+    let html = "<table id='tabla1'>";
     for (i = 0; i < lista_activas.length; i++) {
         html += "<tr>";
         html += "<td>" + lista_activas[i] + "</td>";
