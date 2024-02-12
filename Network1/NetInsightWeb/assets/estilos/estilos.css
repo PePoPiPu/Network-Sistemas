@@ -208,13 +208,18 @@ td {
   height: 1600px;
 }
 #topologia {
-  height: 500px;
+  height: 600px;
+  width: 900px;
   position: absolute;
-  top: 1050px;
-  left: 500px;
+  top: 990px;
+  left: 28%;
+  clip-path: inset(0px round 5%);
 }
 #topologia_img {
   height: 100%;
+}
+#spacer4{
+  height: 950px;
 }
 #imagen {
   height: 550px;
@@ -342,7 +347,7 @@ a:hover {
 
 #card2 {
   height: 100px;
-  width: 700px;
+  width: 690px;
   background-color: #5578eb;
   display: flex;
   justify-content: left;
@@ -356,7 +361,21 @@ a:hover {
 
 #card3 {
   height: 100px;
-  width: 400px;
+  width: 355px;
+  background-color: #5578eb;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  position: absolute;
+  top: 750px;
+  left: 150px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#card4 {
+  height: 100px;
+  width: 330px;
   background-color: #5578eb;
   display: flex;
   justify-content: left;
