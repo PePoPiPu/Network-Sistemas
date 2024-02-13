@@ -1,7 +1,0 @@
----------------------------------
-INICIO DE LOS DATOS GENERALES DE LA MÁQUINA
-Arquitectura de la máquina: AMD64
-Nombre del host: PC15534
-Sistema Operativo: Windows-10-10.0.19045-SP0
-Nombre del procesador: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
-Versión del sistema: 10

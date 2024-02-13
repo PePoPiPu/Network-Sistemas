@@ -69,4 +69,4 @@ with open(output_file_path, 'w') as f:
     f.write("FIN DE LOS DATOS INTERNOS DE PROCESOS EN MEMORIA\n")
     f.write("---------------------------------\n")
 
-print(f"Output written to {os.getcwd()}")
+    print(f"Output written to {os.getcwd()}")
