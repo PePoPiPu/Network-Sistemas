@@ -1,0 +1,6 @@
+TODO:
+	Poner colores a palabras clave
+	Formatear texto
+	Hacer la bibliografía
+	Hacer el powerpoint
+	Hacer la memoria técnica

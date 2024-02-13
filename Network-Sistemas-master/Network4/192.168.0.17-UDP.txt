@@ -1,0 +1,1 @@
+# Nmap 7.94SVN scan initiated Tue Feb  6 16:42:18 2024 as: nmap -sU -p 1-65535 -oN 192.168.0.17-UDP.txt 192.168.0.17

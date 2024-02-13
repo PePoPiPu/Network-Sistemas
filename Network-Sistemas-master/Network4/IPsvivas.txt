@@ -1,0 +1,16 @@
+# Nmap 7.94SVN scan initiated Tue Feb  6 16:30:21 2024 as: nmap -sP -oN IPsvivas.txt 192.168.0.1-255
+Nmap scan report for _gateway (192.168.0.1)
+Host is up (0.0058s latency).
+Nmap scan report for 192.168.0.11
+Host is up (0.0088s latency).
+Nmap scan report for 192.168.0.12
+Host is up (0.11s latency).
+Nmap scan report for 192.168.0.15
+Host is up (0.064s latency).
+Nmap scan report for 192.168.0.17
+Host is up (0.10s latency).
+Nmap scan report for 192.168.0.19
+Host is up (0.058s latency).
+Nmap scan report for alexsugimoto (192.168.0.20)
+Host is up (0.000033s latency).
+# Nmap done at Tue Feb  6 16:30:41 2024 -- 255 IP addresses (7 hosts up) scanned in 19.78 seconds

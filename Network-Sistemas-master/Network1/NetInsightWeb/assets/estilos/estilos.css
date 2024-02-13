@@ -1,0 +1,443 @@
+@font-face {
+  font-family: Array;
+  src: url(../fuentes/Array-Bold.otf);
+}
+
+@font-face {
+  font-family: Satoshi;
+  src: url(../fuentes/Satoshi-Regular.otf);
+}
+
+@font-face {
+  font-family: Satoshi-Bold;
+  src: url(../fuentes/Satoshi-Bold.otf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 75px 1fr 75px;
+  grid-template-areas: "zn" "zs" "zf";
+  background-color: #111113;
+  font-family: Satoshi;
+}
+
+nav {
+  position: sticky;
+  top: 0px;
+  grid-area: zn;
+  color: #d6d6d6;
+  background-color: #111113;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0px 1px 2px 0px rgba(0, 140, 255, 0.7),
+            1px 2px 4px 0px rgba(0, 140, 255, 0.7),
+            2px 4px 8px 0px rgba(0, 140, 255, 0.7),
+            2px 4px 16px 0px rgba(0, 140, 255, 0.7);
+}
+
+nav>div {
+  margin: 10px;
+  transition: 0.4s;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+
+nav>div:hover {
+  background-color: #d6d6d6;
+  color: #111113;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+#logo {
+  font-family: Array;
+  font-size: 40px;
+  position: absolute;
+  left: 30px;
+  /* Desactiva el hover */
+  pointer-events: none
+}
+
+#system {
+  margin-right: 50px;
+}
+
+section {
+  grid-area: zs;
+  color: #d6d6d6;
+}
+
+#texto_principal {
+  font-family: Satoshi-Bold;
+  font-size: 60px;
+  width: 790px;
+  position: absolute;
+  top: 300px;
+  left: 150px;
+}
+
+#texto {
+  font-size: 30px;
+  width: 790px;
+  position: absolute;
+  top: 470px;
+  left: 150px;
+}
+
+#spacer {
+  height: 1400px;
+}
+
+table {
+  position: absolute;
+  right: 250px;
+  top: 1050px;
+  width: 1000px;
+  font-weight: bold;
+}
+#tabla1 {
+  position: absolute;
+  right: 250px;
+  top: 1050px;
+  width: 30%;
+  font-weight: bold;
+}
+#binarias {
+  position: absolute;
+  left: 70%;
+  top: 250px;
+  width: 20%;
+  font-weight: bold;
+}
+
+td {
+  height: 60px;
+  font-size: 30px;
+  border-radius: 5px;
+  background-color: #5578eb;
+  color: #d6d6d6;
+  margin: 5px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+#texto_principal2 {
+  font-family: Satoshi-Bold;
+  font-size: 60px;
+  width: 790px;
+  position: absolute;
+  top: 1000px;
+  left: 150px;
+}
+
+#texto2 {
+  font-size: 30px;
+  width: 790px;
+  position: absolute;
+  top: 1090px;
+  left: 150px;
+}
+
+#texto_principal3 {
+  font-family: Satoshi-Bold;
+  font-size: 60px;
+  width: 790px;
+  position: absolute;
+  top: 950px;
+  left: 670px;
+}
+
+#texto3 {
+  font-size: 30px;
+  width: 790px;
+  position: absolute;
+  text-align: center;
+  top: 1040px;
+  left: 580px;
+}
+
+#loader {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-bottom: 5px solid #3498db;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 2s linear infinite;
+  position: absolute;
+  top: 820px;
+  left: 160px;
+  visibility: hidden;
+}
+
+#loader_texto {
+  position: absolute;
+  font-size: 30px;
+  top: 817px;
+  left: 220px;
+  visibility: hidden;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#spacer2 {
+  height: 150px;
+}
+#spacer3 {
+  height: 1600px;
+}
+#topologia {
+  height: 600px;
+  width: 900px;
+  position: absolute;
+  top: 990px;
+  left: 28%;
+  clip-path: inset(0px round 5%);
+}
+#topologia_img {
+  height: 100%;
+}
+#spacer4{
+  height: 950px;
+}
+#imagen {
+  height: 550px;
+  width: 670px;
+  position: absolute;
+  top: 220px;
+  right: 120px;
+  clip-path: inset(0px round 5%); 
+}
+
+#imagen > img {
+  height: 100%;
+}
+#imagen2 {
+  height: 550px;
+  width: 670px;
+  position: absolute;
+  top: 220px;
+  right: 120px;
+  clip-path: inset(0px round 5%); 
+}
+#imagen2 > img {
+  height: 100%;
+  position: relative;
+  right: 300px;
+}
+footer {
+  grid-area: zf;
+  color: #d6d6d6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+}
+
+.terminal {
+  width: 880px;
+  height: 480px;
+  padding: 10px;
+  background: #262627;
+  color: #0f0;
+  border-radius: 0px 0px 10px 10px; 
+  font-family: monospace;
+  text-align: left;
+  position: absolute;
+  top: 1060px;
+  left: 25%;
+}
+
+.terminal pre {
+  margin: 10px;
+  padding: 10px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+#terminal_bar {
+  width: 900px;
+  border-radius: 10px 10px 0px 0px; 
+  height: 35px;
+  background-color: #333333;
+  position: absolute;
+  top: 1025px;
+  left: 25%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+#minimize {
+  background-color: #FFBD44;
+  border-radius: 100%;
+  height: 20px;
+  width: 20px;
+  margin: 3px;
+}
+#maximize {
+  background-color: #00CA4E;
+  border-radius: 100%;
+  height: 20px;
+  width: 20px;
+  margin: 3px;
+}
+#close {
+  background-color: #FF605C;
+  border-radius: 100%;
+  height: 20px;
+  width: 20px;
+  margin-left: 3px;
+  margin-right: 15px;
+}
+/* https://alvarotrigo.com/blog/7-scroll-text-animations-css-and-js/ */
+h1 {
+  font-weight: normal;
+  position: relative;
+  top: 25px;
+  padding: 30px;
+  font-size: 50px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  background: linear-gradient(135deg, rgba(214, 214, 214, 1) 0%, rgb(160, 220, 255) 100%);
+  background-clip: text;
+  color: transparent;
+}
+
+a:hover {
+  background: linear-gradient(135deg, rgba(17, 17, 19, 1) 0%, rgb(36, 41, 44) 100%);
+  background-clip: text;
+  color: transparent;
+}
+
+#card {
+  height: 100px;
+  width: 700px;
+  background-color: #5578eb;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  position: absolute;
+  top: 700px;
+  left: 150px;
+  border-radius: 20px;
+}
+
+#card2 {
+  height: 100px;
+  width: 690px;
+  background-color: #5578eb;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  position: absolute;
+  top: 700px;
+  left: 150px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#card3 {
+  height: 100px;
+  width: 355px;
+  background-color: #5578eb;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  position: absolute;
+  top: 750px;
+  left: 150px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#card4 {
+  height: 100px;
+  width: 330px;
+  background-color: #5578eb;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  position: absolute;
+  top: 750px;
+  left: 150px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.note::after {
+  content: '';
+  width: 20%;
+  height: 2px;
+  border-radius: 999px;
+  background-color: #AFAFAF;
+  background: linear-gradient(135deg, rgba(43, 171, 217, 1) 0%, rgba(0, 130, 200, 1) 100%);
+  position: absolute;
+  top: -1.8em;
+  left: 0;
+}
+
+.note {
+  font-size: 0.8em;
+  color: #8A8A8A;
+  position: relative;
+  margin-top: 4em;
+}
+
+/* Scroller styling */
+.scroller {
+  height: 1.2em;
+  line-height: 1.2em;
+  position: relative;
+  bottom: 62px;
+  left: 535px;
+  overflow: hidden;
+  width: 10em;
+}
+
+.scroller>span {
+  position: absolute;
+  top: 0;
+  animation: slide 5s infinite;
+  font-weight: bold;
+
+}
+
+@keyframes slide {
+  0% {
+    top: 0;
+  }
+
+  25% {
+    top: -1.2em;
+  }
+
+  50% {
+    top: -2.4em;
+  }
+
+  75% {
+    top: -3.6em;
+  }
+}

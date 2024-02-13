@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Actividad Sistemas Informáticos</title>
+    <link href="assets/estilos/estilos.css" rel="stylesheet">
+    <script src="assets/scripts/scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div id="logo">Net Analizer</div>
+        <div>
+            <div>
+                <div>
+                    <a href="index.html">Inicio</a>
+                </div>
+            </div>
+        </div>
+        <div>Documentación</div>
+        <div>
+            <div>
+                <a href="network1.html">Network 1</a>
+            </div>
+        </div>
+        <div>
+            <div>
+                <a href="network2.html">Network 2</a>
+            </div>
+        </div>
+        <div>
+            <div>
+                <a href="network3.html">Network 3</a>
+            </div>
+        </div>
+        <div>
+            <div>
+                <a href="network4.html">Network 4</a>
+            </div>
+        </div>
+        <div id="system">
+            <div>
+                <a href="system1.html">System 1</a>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div id="texto_principal">
+            Network 4: Escaneador de red.
+        </div>
+        <div id="texto">
+            Network 4 tiene como objetivo escanear la red para detectar qué IPs están activas, escanear todos los puertos y ver su estado, y ver cuál es el servicio más probable de ejecución. Todo se esto se realiza con la herramienta "nmap". Pulsando el botón verás un ejemplo real de uso realizado para esta actividad, como siempre en mi red local.
+        </div>
+        <div id="imagen">
+            <img src="assets/imagenes/foto5.jpg" alt="">
+        </div>
+        <div id="card4" onclick="fVerCaptura()">
+            <h1>Ver terminal
+                <div class="scroller">
+                  <span>
+                  </span>
+                </div>
+              </h1>  
+        </div>
+        <div id="spacer3"></div>
+        <div id="terminal_bar">
+            <div id="minimize"></div>
+            <div id="maximize"></div>
+            <div id="close"></div>
+        </div>
+        <div class="terminal">
+            <pre>
+nmap -sU -p 1-65535 -oN 192.168.0.20-UDP.txt 192.168.0.20
+
+# Nmap 7.94SVN scan initiated Tue Feb  6 16:42:01 2024 as: nmap -sU -p 1-65535 -oN 192.168.0.20-UDP.txt 192.168.0.20
+Nmap scan report for alexsugimoto (192.168.0.20)
+Host is up (0.0000030s latency).
+Not shown: 65530 closed udp ports (port-unreach)
+PORT      STATE         SERVICE
+1900/udp  open|filtered upnp
+5353/udp  open|filtered zeroconf
+43004/udp open|filtered unknown
+57621/udp open|filtered unknown
+58083/udp open|filtered unknown
+
+# Nmap done at Tue Feb  6 16:42:13 2024 -- 1 IP address (1 host up) scanned in 12.83 seconds
+
+nmap -p 1-65535 -oN 192.168.0.20.txt 192.168.0.20
+
+# Nmap 7.94SVN scan initiated Tue Feb  6 16:52:23 2024 as: nmap -p 1-65535 -oN 192.168.0.20.txt 192.168.0.20
+Nmap scan report for alexsugimoto (192.168.0.20)
+Host is up (0.0000030s latency).
+Not shown: 65531 closed tcp ports (reset)
+PORT      STATE SERVICE
+3389/tcp  open  ms-wbt-server
+3390/tcp  open  dsc
+57621/tcp open  unknown
+59277/tcp open  unknown
+
+# Nmap done at Tue Feb  6 16:52:29 2024 -- 1 IP address (1 host up) scanned in 5.90 seconds
+            </pre>
+          </div>
+    </section>
+    <footer>&copy;Alex Sugimoto - Febrero 2024</footer>
+</body>
+</html>
